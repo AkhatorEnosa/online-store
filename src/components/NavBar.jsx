@@ -44,7 +44,11 @@ const NavBar = () => {
 
         {/* mobile menu */}
 
-        <div className={nav ? 'fixed h-[87%] top-[5.2rem] left-0 w-[60%] bg-white  overflow-y-scroll shadow transition-all duration-400 lg:hidden' : 'fixed left-[100%] lg:hidden'}>
+        <div className={nav ? 'fixed h-full top-0 left-0 w-[60%] px-6 py-4  bg-white  overflow-y-scroll shadow-lg transition-all duration-400 lg:hidden' : 'fixed left-[100%] lg:hidden'}>
+
+        <div className="logo text-black text-5xl font-extrabold items-center">
+          <p>Shopaman.com</p>
+        </div>
 
           <ul className='links flex flex-col p-4 uppercase tracking-wider'>
             <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Home</li>

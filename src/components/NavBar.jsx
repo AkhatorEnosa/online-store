@@ -10,10 +10,10 @@ const NavBar = () => {
   }
 
   return (
-    <div className='w-full px-6 py-4 flex justify-between items-center shadow'>
+    <div className='w-full px-6 py-4 mb-4 flex justify-between items-center shadow'>
 
       <div className="logo text-black text-5xl font-extrabold items-center">
-        <p>Weshop.com</p>
+        <p>Shopaman.com</p>
       </div>
 
       {/* fullscreen menu */}
@@ -44,19 +44,19 @@ const NavBar = () => {
 
         {/* mobile menu */}
 
-        <div className={nav ? 'fixed h-[85%] top-[5.2rem] left-0 w-[60%] shadow transition-all duration-400 lg:hidden' : 'fixed left-[100%] lg:hidden'}>
+        <div className={nav ? 'fixed h-[87%] top-[5.2rem] left-0 w-[60%] bg-white  overflow-y-scroll shadow transition-all duration-400 lg:hidden' : 'fixed left-[100%] lg:hidden'}>
 
           <ul className='links flex flex-col p-4 uppercase tracking-wider'>
-            <li className='p-6 px-3 hover:text-white hover:border-b-2 hover:bg-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Home</li>
-            <li className='p-6 px-3 hover:text-white hover:border-b-2 hover:bg-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Men's</li>
-            <li className='p-6 px-3 hover:text-white hover:border-b-2 hover:bg-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Women's</li>
-            <li className='p-6 px-3 hover:text-white hover:border-b-2 hover:bg-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Shop</li>
-            <li className='p-6 px-3 hover:text-white hover:border-b-2 hover:bg-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Contact</li>
+            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Home</li>
+            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Men's</li>
+            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Women's</li>
+            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Shop</li>
+            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Contact</li>
           </ul>
 
           <ul className='others flex flex-col p-7 tracking-widest text-sm text-[#737373] font-thin'>
             <li className='text-[#c67019] align-left cursor-pointer '>Login/Register</li>
-            <li className='my-10'> <input className="border border-[#c67019] border-opacity-50 rounded-md py-4 px-3 w-full sm:w-80" type="search" name="search" id="" placeholder="Search..."/></li>
+            <li className='my-10'> <input className="border border-[#c67019] border-opacity-50 rounded-md py-4 px-3 w-full" type="search" name="search" id="" placeholder="Search..."/></li>
           </ul>
         </div>
     </div>

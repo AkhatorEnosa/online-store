@@ -25,13 +25,13 @@ const NavBar = () => {
           <li className='mr-8 hover:text-[#c67019] cursor-pointer duration-300'>Contact</li>
         </ul>
 
-        <ul className='others flex tracking-widest text-sm text-[#737373] font-thin'>
+        <ul className='others flex tracking-widest text-sm text-[#737373] font-thin justify-end align-bottom items-center'>
           <li className='mr-6 hidden lg:flex hover:text-black cursor-pointer duration-300'>Login/Register</li>
           <li className='mr-6 hidden lg:flex'><BiSearchAlt size={20}/></li>
           <li className='mr-6'>
-            <div>
+            <div className="bg-[#ff9123] px-4 py-2 rounded-md text-white cursor-pointer">
               <span className='absolute w-4 h-4 bg-red-600 rounded-full text-center top-6 text-white text-xs lg:top-6 lg:right-10'>2</span>
-              <p><TiShoppingCart size={20}/></p>
+              <p className="flex justify-center">Cart  <TiShoppingCart size={20}/></p>
             </div>
           </li>
         </ul>

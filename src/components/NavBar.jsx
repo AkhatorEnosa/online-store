@@ -13,7 +13,7 @@ const NavBar = () => {
     <div className='w-full px-6 py-4 mb-4 flex justify-between items-center shadow'>
 
       <div className="logo text-black text-5xl font-extrabold items-center">
-        <p>Shopaman.com</p>
+        <p>Shaup.com</p>
       </div>
 
       {/* fullscreen menu */}

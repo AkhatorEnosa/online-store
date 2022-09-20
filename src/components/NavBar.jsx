@@ -18,18 +18,18 @@ const NavBar = () => {
 
       {/* fullscreen menu */}
         <ul className='links hidden lg:flex p-0 uppercase tracking-wider'>
-          <li className='mr-8 hover:text-[#c67019] cursor-pointer duration-300'>Home</li>
-          <li className='mr-8 hover:text-[#c67019] cursor-pointer duration-300'>Men's</li>
-          <li className='mr-8 hover:text-[#c67019] cursor-pointer duration-300'>Women's</li>
-          <li className='mr-8 hover:text-[#c67019] cursor-pointer duration-300'>Shop</li>
-          <li className='mr-8 hover:text-[#c67019] cursor-pointer duration-300'>Contact</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Home</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Men's</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Women's</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Shop</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Contact</li>
         </ul>
 
         <ul className='others flex tracking-widest text-sm text-[#737373] font-thin justify-end align-bottom items-center'>
-          <li className='mr-6 hidden lg:flex hover:text-black cursor-pointer duration-300'>Login/Register</li>
-          <li className='mr-6 hidden lg:flex'><BiSearchAlt size={20}/></li>
+          <li className='mr-6 hidden lg:flex hover:text-black cursor-pointer duration-300 underline'>Login/Register</li>
+          <li className='mr-6 hidden lg:flex cursor-pointer'><BiSearchAlt size={20}/></li>
           <li className='mr-6'>
-            <div className="lg:bg-[#ff9123] lg:px-4 lg:py-2 lg:rounded-md lg:text-white cursor-pointer">
+            <div className="cursor-pointer">
               <span className='absolute w-4 h-4 bg-red-600 rounded-full text-center top-6 text-white text-xs lg:top-6 lg:right-10'>2</span>
               <p className="flex justify-center"><TiShoppingCart size={20}/></p>
             </div>
@@ -51,16 +51,16 @@ const NavBar = () => {
         </div>
 
           <ul className='links flex flex-col p-4 uppercase tracking-wider'>
-            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Home</li>
-            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Men's</li>
-            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Women's</li>
-            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Shop</li>
-            <li className='p-6 px-3 hover:text-[#c67019] hover:border-b-[1px] hover:border-b-[#c67019] hover:translate-x-4 duration-200 cursor-pointer '>Contact</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Home</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Men's</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Women's</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Shop</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Contact</li>
           </ul>
 
           <ul className='others flex flex-col p-7 tracking-widest text-sm text-[#737373] font-thin'>
-            <li className='text-[#c67019] align-left cursor-pointer '>Login/Register</li>
-            <li className='my-10'> <input className="border border-[#c67019] border-opacity-50 rounded-md py-4 px-3 w-full" type="search" name="search" id="" placeholder="Search..."/></li>
+            <li className='hover:font-extrabold align-left cursor-pointer underline'>Login/Register</li>
+            <li className='my-10'> <input className="border border-opacity-50 rounded-md py-4 px-3 w-full active:border-black active:outline-none" type="search" name="search" id="" placeholder="Search..."/></li>
           </ul>
         </div>
     </div>

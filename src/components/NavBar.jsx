@@ -29,9 +29,9 @@ const NavBar = () => {
           <li className='mr-6 hidden lg:flex hover:text-black cursor-pointer duration-300'>Login/Register</li>
           <li className='mr-6 hidden lg:flex'><BiSearchAlt size={20}/></li>
           <li className='mr-6'>
-            <div className="bg-[#ff9123] px-4 py-2 rounded-md text-white cursor-pointer">
+            <div className="lg:bg-[#ff9123] lg:px-4 lg:py-2 lg:rounded-md lg:text-white cursor-pointer">
               <span className='absolute w-4 h-4 bg-red-600 rounded-full text-center top-6 text-white text-xs lg:top-6 lg:right-10'>2</span>
-              <p className="flex justify-center">Cart  <TiShoppingCart size={20}/></p>
+              <p className="flex justify-center"><TiShoppingCart size={20}/></p>
             </div>
           </li>
         </ul>
@@ -44,10 +44,10 @@ const NavBar = () => {
 
         {/* mobile menu */}
 
-        <div className={nav ? 'fixed h-full top-0 left-0 w-[60%] px-6 py-4  bg-white  overflow-y-scroll shadow-lg transition-all duration-400 lg:hidden' : 'fixed left-[100%] lg:hidden'}>
+        <div className={nav ? 'fixed h-full top-0 left-0 w-[60%] px-6 py-4 bg-white overflow-y-scroll shadow-lg transition-all duration-300 z-50 lg:hidden' : 'fixed top-0 -left-96 lg:hidden transition-all duration-300'}>
 
         <div className="logo text-black text-5xl font-extrabold items-center">
-          <p>Shopaman.com</p>
+          <p>Shaup.com</p>
         </div>
 
           <ul className='links flex flex-col p-4 uppercase tracking-wider'>

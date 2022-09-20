@@ -5,11 +5,13 @@ const Hot = () => {
   return (
     <div className='w-full h-screen'>
           {/* <h1 className='bg-[#ff1c1c] text-white rounded-br-lg shadow-md w-fit px-2 py-2 pr-20 tracking-widest uppercase'>Hot Sale</h1> */}
-          <div className="grid grid-cols-2">
-            <div className='z-10 w-full p-5'>
-              <div className="flex flex-col px-6">
-                <p className='uppercase font-bold text-4xl bg-red-600 absolute px-6 py-4 rounded-full text-white text-center'>50<span className='text-black'>% </span><br/><span className='font-light text-2xl '>OFF</span></p>
-                <img src={Shoe} alt="shoe" className='-scale-x-100 w-[650px] z-10'/>
+          <div className="grid md:grid-cols-2 grid-cols-1">
+            <div className='z-10 w-full'>
+              <div className="flex px-6 items-start">
+                <p className='absolute uppercase font-bold text-4xl bg-red-600 px-6 py-4 rounded-full text-white text-center'>50<span className='text-black'>% </span><br/><span className='font-light text-2xl '>OFF</span></p>
+                <div className="w-full flex justify-end z-10 ">
+                  <img src={Shoe} alt="shoe" className='-scale-x-100'/>
+                </div>
               </div>
 
               <div className='mt-2'>

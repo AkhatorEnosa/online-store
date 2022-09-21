@@ -17,11 +17,11 @@ const NavBar = () => {
       </div>
 
       {/* fullscreen menu */}
-        <ul className='links hidden lg:flex p-0 uppercase tracking-wider'>
+        <ul className='links hidden lg:flex p-0 uppercase tracking-wider text-xs'>
           <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Home</li>
-          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Men's</li>
-          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Women's</li>
-          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Shop</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Phones & accessories</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Clothing</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Electronics</li>
           <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Contact</li>
         </ul>
 
@@ -30,7 +30,7 @@ const NavBar = () => {
           <li className='mr-6 hidden lg:flex cursor-pointer'><BiSearchAlt size={20}/></li>
           <li className='mr-6'>
             <div className="cursor-pointer">
-              <span className='absolute w-4 h-4 bg-red-600 rounded-full text-center top-6 text-white text-xs lg:top-6 lg:right-10'>2</span>
+              <span className='absolute w-4 h-4 bg-black rounded-full text-center top-6 text-white text-xs lg:top-6 lg:right-10'>2</span>
               <p className="flex justify-center"><TiShoppingCart size={20}/></p>
             </div>
           </li>
@@ -42,7 +42,7 @@ const NavBar = () => {
       </div>
 
 
-        {/* mobile menu */}
+        {/* mobile side menu */}
 
         <div className={nav ? 'fixed h-full top-0 left-0 w-[60%] px-6 py-4 bg-white overflow-y-scroll shadow-lg transition-all duration-300 z-50 lg:hidden' : 'fixed top-0 -left-96 lg:hidden transition-all duration-300'}>
 
@@ -52,9 +52,9 @@ const NavBar = () => {
 
           <ul className='links flex flex-col p-4 uppercase tracking-wider'>
             <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Home</li>
-            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Men's</li>
-            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Women's</li>
-            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Shop</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Phones & accessories</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Clothing</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Electronics</li>
             <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Contact</li>
           </ul>
 

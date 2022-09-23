@@ -18,7 +18,7 @@ const Hot = () => {
 
               <div className='mt-2 px-3'>
                 <h2 className='font-extrabold text-4xl'>Nike Air Max 270</h2>
-                <p className='text-[1.2rem] mb-3 mt-2 z-20 font-light'>PRICE: <span className='line-through text-gray-500 opacity-75'>₦30,000</span> ₦15,0000</p>
+                <p className='text-[1.2rem] mb-3 mt-2 z-20 font-light'>PRICE: <span className='line-through text-gray-500 opacity-75'>₦50,000</span> ₦25,000</p>
                 <p>Nike's first lifestyle Air Max brings you style, comfort and big attitude in the Nike Air Max 270. The design draws inspiration from Air Max icons, showcasing Nike's greatest innovation with its large window and fresh array of colors.</p>
                 <button className='px-8 py-2 hover:bg-[#fed243] hover:text-black bg-[#000] text-white my-4 shadow-md duration-300'>Buy Now</button>
               </div>

@@ -5,6 +5,14 @@ body {
   color: rgb(52, 39, 24);
 }
 
-.logo {
+.logo,.fiesta {
   font-family: 'Allison', cursive;
 }
+
+.fiesta {
+  /* text-shadow: 0px 0px 5px #f7f5ed; */
+}
+
+/* .big-sale{
+  background-image: url('./assets/happy2.png');
+} */

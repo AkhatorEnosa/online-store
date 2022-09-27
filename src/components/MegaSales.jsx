@@ -3,10 +3,10 @@ import ShopBag from '../assets/happy.png';
 
 const MegaSales = () => {
   return (
-    <div className="w-full flex justify-center align-middle bg-[#f7f5ed] items-center px-20 py-10">
+    <div className="w-full flex justify-center align-middle bg-[#f7f5ed] items-center px:10 sm:px-20 py-10 shadow-sm">
         <img src={ShopBag} alt="shopping bag" className='lg:w-[30rem] md:w-[25rem] w-[10rem]'/>
       <div className="flex flex-col ml-10 z-50">
-        <p>THE BIGGEST SALE OF THE YEAR</p>
+        <p className='md:text-base text-xs'>THE BIGGEST SALE OF THE YEAR</p>
         <h1 className='lg:text-7xl text-3xl tracking-tight font-extrabold fiesta'>Mega Shopping Fiesta</h1>
         <button className="px-8 py-2 hover:bg-[#fed243] hover:text-black bg-[#000] text-white my-4 shadow-md duration-300">
           Buy Now

@@ -9,7 +9,7 @@ const MegaSales = () => {
         <p className='md:text-base text-xs'>THE BIGGEST SALE OF THE YEAR</p>
         <h1 className='lg:text-7xl text-3xl tracking-tight font-extrabold fiesta'>Mega Shopping Fiesta</h1>
         <button className="px-8 py-2 hover:bg-[#fed243] hover:text-black bg-[#000] text-white my-4 shadow-md duration-300">
-          Buy Now
+          Shop Now
         </button>
       </div>
     </div>

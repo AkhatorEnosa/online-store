@@ -3,7 +3,7 @@ import Shoe  from '../assets/shoe.png';
 
 const Hot = () => {
   return (
-    <div className='w-full flex flex-col justify-center h-fit py-12 -mt-8 md:py-8'>
+    <div className='w-full flex flex-col justify-center h-fit pb-6 pt-0 md:py-8'>
           <h1 className='w-fit px-2 pb-4 pr-20 text-sm'>Welcome, Guest</h1>
           <div className="grid md:grid-cols-2 grid-cols-1 px-4">
 

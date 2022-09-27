@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Allison&family=Assistant&family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
 body {
-  font-family: 'Assistant', sans-serif;
+      /* font-family: 'Montserrat', sans-serif; */
+/* 
+    font-family: 'Raleway', sans-serif; */
   color: rgb(52, 39, 24);
 }
 

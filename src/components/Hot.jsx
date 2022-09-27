@@ -24,7 +24,7 @@ const Hot = () => {
               </div>
             </div>
 
-            <div className='grid grid-cols-2 md:ml-3 ml-0'>
+            <div className='grid grid-cols-2 md:ml-3 md:mt-0 ml-0 mt-5'>
 
               <div className='flex flex-col justify-between rounded-md mr-2 mb-2  shadow-sm bg-[#f6eaea]'>
                     <h3 className='bg-[#fed243] w-fit px-1 text-center'>Latest phones</h3>

@@ -2,7 +2,7 @@ import React from 'react';
 import Bag from '../assets/bag.jpg';
 import {AiFillStar} from 'react-icons/ai';
 import {AiOutlineStar} from 'react-icons/ai';
-import { AiFillHeart, AiTwotoneShopping} from "react-icons/ai";
+//import { AiFillHeart, AiTwotoneShopping} from "react-icons/ai";
 
 const Sections = () => {
   return (

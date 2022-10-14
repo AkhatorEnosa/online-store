@@ -10,8 +10,8 @@ const Sections = () => {
         <h1 className='uppercase border-b-2 border-[#fed243] w-fit pr-5 mb-10 '>Hot Trend</h1>
 
         <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-24 w-32 md:h-24'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 md:self-stretch'>
+            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
+            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
               <span className='text-sm'>School bag</span>
               <div className='text-small flex'>
                 <AiFillStar className='text-[#fed243]'/>
@@ -25,8 +25,8 @@ const Sections = () => {
         </div>
 
         <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-24 w-32 md:h-24'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 md:self-stretch'>
+            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
+            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
               <span className='text-sm'>School bag</span>
               <div className='text-small flex'>
                 <AiFillStar className='text-[#fed243]'/>
@@ -40,8 +40,8 @@ const Sections = () => {
         </div>
 
         <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-24 w-32 md:h-24'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 md:self-stretch'>
+            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
+            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
               <span className='text-sm'>School bag</span>
               <div className='text-small flex'>
                 <AiFillStar className='text-[#fed243]'/>
@@ -60,8 +60,8 @@ const Sections = () => {
         <h1 className='uppercase border-b-2 border-[#fed243] w-fit pr-5 mb-10 '>Best Sellers</h1>
 
         <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-24 w-32 md:h-24'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 md:self-stretch'>
+            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
+            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
               <span className='text-sm'>School bag</span>
               <div className='text-small flex'>
                 <AiFillStar className='text-[#fed243]'/>
@@ -75,8 +75,8 @@ const Sections = () => {
         </div>
 
         <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-24 w-32 md:h-24'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 md:self-stretch'>
+            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
+            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
               <span className='text-sm'>School bag</span>
               <div className='text-small flex'>
                 <AiFillStar className='text-[#fed243]'/>
@@ -90,8 +90,8 @@ const Sections = () => {
         </div>
 
         <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-24 w-32 md:h-24'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 md:self-stretch'>
+            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
+            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
               <span className='text-sm'>School bag</span>
               <div className='text-small flex'>
                 <AiFillStar className='text-[#fed243]'/>

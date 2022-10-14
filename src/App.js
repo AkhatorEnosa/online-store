@@ -1,4 +1,6 @@
 import './App.css';
+import Benefits from './components/Benefits';
+import Footer from './components/Footer';
 import Hot from './components/Hot';
 import MegaSales from './components/MegaSales';
 import NavBar from './components/NavBar';
@@ -13,6 +15,8 @@ function App() {
       <NewProducts />
       <MegaSales />
       <Sections />
+      <Benefits />
+      <Footer />
     </div>
   );
 }

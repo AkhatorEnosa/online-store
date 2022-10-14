@@ -49,7 +49,7 @@ const Footer = () => {
       <div className="flex flex-col py-2 md:pl-2 pr-10">
         <h1 className='text-1xl font-bold uppercase mb-2'>Newsletter</h1>
         <div className="flex border-[1px] border-[#ccc] rounded-full py-1 px-2 w-fit">
-          <input type="text" placeholder='Email' className='mr-6 w-80 md:w-auto'/>
+          <input type="text" placeholder='Email' className='mr-6 md:w-auto'/>
           <button className="bg-black text-white font-sm py-2 px-5 rounded-full">
             Subscribe
           </button>

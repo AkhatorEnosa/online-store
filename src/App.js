@@ -14,11 +14,11 @@ const [product, setProduct] = useState([]);
 const randomNum = Math.floor(Math.random() * 30) + 1;
 
 useEffect(()=> {
-  console.log(randomNum);
+  //console.log(randomNum);
   fetch('https://dummyjson.com/products')
         .then(response => response.json())
         .then(item => setProduct(item.products[randomNum]))
-});
+}, [] );
 
   return (
     <div className="h-screen">

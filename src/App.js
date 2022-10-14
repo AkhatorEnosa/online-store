@@ -18,7 +18,7 @@ useEffect(()=> {
   fetch('https://dummyjson.com/products')
         .then(response => response.json())
         .then(item => setProduct(item.products[randomNum]))
-}, [randomNum] );
+}, randomNum );
 
   return (
     <div className="h-screen">

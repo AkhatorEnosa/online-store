@@ -1,7 +1,7 @@
 import React from 'react';
-import Shoe  from '../assets/shoe.png';
+import Shoe from '../assets/shoe.png';
 
-const Hot = () => {
+const Hot = (props) => {
   return (
     <div className='w-full flex flex-col justify-center h-fit pb-6 pt-0 md:py-8'>
           <h1 className='w-fit px-2 pb-4 pr-20 text-sm'>Welcome, Guest</h1>
@@ -10,16 +10,16 @@ const Hot = () => {
             <div className='z-10 w-full bg-[#f6f6f6] shadow-sm rounded-md mb-4 md:mb-0'>
                   <h3 className='bg-[#fed243] w-fit mb-2 px-2 uppercase text-center'>New</h3>
               <div className="flex px-3 items-start">
-                  <p className='absolute uppercase font-bold text-6xl text-center tracking-tighter'>50<span className='text-[#313030]'>% </span><span className='text-red-500'>OFF</span></p>
+                  <p className='absolute uppercase font-bold text-6xl text-center tracking-tighter'>{props.discountPercentage}<span className='text-[#313030]'>% </span><span className='text-red-500'>OFF</span></p>
                 <div className="w-full flex justify-end">
-                  <img src={Shoe} alt="shoe" className='w-full '/>
+                  <img src={props.thumbnail} alt="shoe" className='w-full '/>
                 </div>
               </div>
 
               <div className='mt-2 px-3'>
-                <h2 className='font-extrabold text-4xl'>Nike Air Max 270</h2>
-                <p className='text-[1.2rem] mb-3 mt-2 z-20 font-light'>PRICE: <span className='line-through text-gray-500 opacity-75'>₦50,000</span> ₦25,000</p>
-                <p>Nike's first lifestyle Air Max brings you style, comfort and big attitude in the Nike Air Max 270. The design draws inspiration from Air Max icons, showcasing Nike's greatest innovation with its large window and fresh array of colors.</p>
+                <h2 className='font-extrabold text-4xl'>{props.title}</h2>
+                <p className='text-[1.2rem] mb-3 mt-2 z-20 font-light'>PRICE: <span className='line-through text-gray-500 opacity-75'>{((props.price*100)/props.discountPercentage)*500}</span> {props.price*500}</p>
+                <p>{props.description}</p>
                 <button className='px-8 py-2 hover:bg-[#fed243] hover:text-black bg-[#000] text-white my-4 shadow-md duration-300'>Buy Now</button>
               </div>
             </div>

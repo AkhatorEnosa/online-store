@@ -15,10 +15,16 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
 
 useEffect(()=> {
   //console.log(randomNum);
+  let mounted = true;
   fetch('https://dummyjson.com/products')
         .then(response => response.json())
-        .then(item => setProduct(item.products[randomNum]))
-}, [product] );
+        .then(item => {
+             if(mounted) {
+                 setProduct(item.products[randomNum])
+            } 
+        })
+     return () => mounted = false;
+}, [] );
 
   return (
     <div className="h-screen">

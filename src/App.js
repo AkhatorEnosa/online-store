@@ -11,10 +11,12 @@ import Sections from './components/Sections';
 function App() {
 const [product, setProduct] = useState([]);
 
-const randomNum = Math.floor(Math.random() * 30) + 1;
+//const randomNum = Math.floor(Math.random() * 30) + 1;
 
 useEffect(()=> {
   //console.log(randomNum);
+const randomNum = Math.floor(Math.random() * 30) + 1;
+ 
   let mounted = true;
   fetch('https://dummyjson.com/products')
         .then(response => response.json())

@@ -10,15 +10,19 @@ const Hot = (props) => {
             <div className='z-10 w-full bg-[#f6f6f6] shadow-sm rounded-md mb-4 md:mb-0'>
                   <h3 className='bg-[#fed243] w-fit mb-2 px-2 uppercase text-center'>New</h3>
               <div className="flex px-3 items-start">
-                  <p className='absolute uppercase font-bold text-6xl text-center tracking-tighter'>{props.discountPercentage}<span className='text-[#313030]'>% </span><span className='text-red-500'>OFF</span></p>
-                <div className="w-full flex justify-end">
-                  <img src={props.thumbnail} alt="shoe" className='w-full '/>
+                  {/* <p className='absolute uppercase font-bold text-6xl text-center tracking-tighter'>{props.discountPercentage}<span className='text-[#313030]'>% </span><span className='text-red-500'>OFF</span></p> */}
+                <div className="w-full h-[350px] overflow-auto">
+                  <img src={props.image} alt="shoe" className=''/>
                 </div>
               </div>
 
+{/* unused code for future purpose, maybe */}
+{/* PRICE: <span className='line-through text-gray-500 opacity-75'>{((props.price*100)/props.discountPercentage)*500}</span> {props.price*500}</p>
+                <p>{props.description} */}
+
               <div className='mt-2 px-3'>
                 <h2 className='font-extrabold text-4xl'>{props.title}</h2>
-                <p className='text-[1.2rem] mb-3 mt-2 z-20 font-light'>PRICE: <span className='line-through text-gray-500 opacity-75'>{((props.price*100)/props.discountPercentage)*500}</span> {props.price*500}</p>
+                <p className='text-[1.2rem] mb-3 mt-2 z-20 font-bold'>PRICE: ₦{props.price*500} </p>
                 <p>{props.description}</p>
                 <button className='px-8 py-2 hover:bg-[#fed243] hover:text-black bg-[#000] text-white my-4 shadow-md duration-300'>Buy Now</button>
               </div>

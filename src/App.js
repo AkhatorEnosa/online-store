@@ -11,6 +11,7 @@ import Sections from './components/Sections';
 function App() {
 const [product, setProduct] = useState([]);
 
+<<<<<<< HEAD
 
 useEffect(()=> {
   //console.log(randomNum);
@@ -35,6 +36,20 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
         .then(item => {
              if(mounted) {
                  setProduct(item[randomNum])
+=======
+//const randomNum = Math.floor(Math.random() * 30) + 1;
+
+useEffect(()=> {
+  //console.log(randomNum);
+const randomNum = Math.floor(Math.random() * 30) + 1;
+ 
+  let mounted = true;
+  fetch('https://dummyjson.com/products')
+        .then(response => response.json())
+        .then(item => {
+             if(mounted) {
+                 setProduct(item.products[randomNum])
+>>>>>>> 6a307c252c29262ffdc877a1d342c3ccf63a105e
             } 
         })
      return () => mounted = false;

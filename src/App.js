@@ -10,6 +10,7 @@ import Sections from './components/Sections';
 
 function App() {
 const [product, setProduct] = useState([]);
+const [loading, setLoading] = useState(true);
 
 
 useEffect(()=> {
@@ -31,12 +32,23 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
  
   let mounted = true;
   fetch('https://fakestoreapi.com/products')
-        .then(response => response.json())
+        .then(response => {
+          if(response.ok){
+            return response.json();
+          }
+          throw response;
+        })
         .then(item => {
              if(mounted) {
                  setProduct(item[randomNum])
             } 
         })
+        .catch(error => {
+          console.error()
+        })
+        .finally(() => {
+          setLoading(false)
+        });
      return () => mounted = false;
 }, [] );
 
@@ -50,6 +62,7 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
         title={product.title}
         // discountPercentage={product.discountPercentage}
         image={product.image}
+        loading={loading}
       />
       <NewProducts />
       <MegaSales />

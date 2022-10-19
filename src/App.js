@@ -9,6 +9,7 @@ import NewProducts from './components/NewProducts';
 import Sections from './components/Sections';
 
 function App() {
+const [products, setProducts] = useState([]);
 const [product, setProduct] = useState([]);
 const [loading, setLoading] = useState(true);
 
@@ -40,11 +41,12 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
         })
         .then(item => {
              if(mounted) {
+                 setProducts(item)
                  setProduct(item[randomNum])
             } 
         })
         .catch(error => {
-          console.error()
+          console.error(error)
         })
         .finally(() => {
           setLoading(false)
@@ -63,6 +65,9 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
         // discountPercentage={product.discountPercentage}
         image={product.image}
         loading={loading}
+
+        product={products}
+        category={product.category}
       />
       <NewProducts />
       <MegaSales />

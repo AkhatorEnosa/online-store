@@ -13,10 +13,11 @@ const HotSection = (props) => {
 
         {
           props.products.filter(x => {
-            if((x.category === props.category1) && (x.id === 12)){
+            if((x.category === props.category1)){
               img = x.image;
             }
-          })
+          }
+          )
         }
         <h3 className='bg-[#fed243] w-fit px-1 pr-4 text-center rounded-1xl mb-3'>Latest {props.category1}</h3>
       <div className="w-full flex flex-col justify-between px-2 pb-2">

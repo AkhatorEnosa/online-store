@@ -59,7 +59,7 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
       {console.log(product)}
       <NavBar/>
       <Hot 
-        price={product.price}
+        // price={product.price}
         description={product.description}
         title={product.title}
         // discountPercentage={product.discountPercentage}

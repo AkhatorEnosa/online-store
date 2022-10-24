@@ -27,7 +27,7 @@ const [category, setCategory] = useState([]);
     return () => mounted  = false;
   }, []);
 
-  if(props.loading) {
+  if(props.loading && props.error) {
     return (
       <div className='w-full flex flex-col justify-center h-fit pb-6 pt-0 md:py-8'>
             <h1 className='w-fit px-2 pb-4 pr-20 text-sm text-white'>Welcome, Guest</h1>
@@ -85,7 +85,7 @@ const [category, setCategory] = useState([]);
   } else {
       return (
         <div className='w-full flex flex-col pb-6 pt-0 md:py-8'>
-          <h1 className='w-fit px-2 pb-4 pr-20 text-sm'>Welcome, Guest</h1>
+          {/* <h1 className='w-fit px-2 pb-4 pr-20 text-sm'>Welcome, Guest</h1> */}
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-4 gap-0 px-4 overflow-scroll">
 
             <div className='z-10 w-full col-span-2 bg-[#fcfcfc] rounded-md mb-4 md:mb-0 overflow-clip shadow-md shadow-[#e7e7e7]'>

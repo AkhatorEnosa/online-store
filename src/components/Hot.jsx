@@ -84,9 +84,9 @@ const [category, setCategory] = useState([]);
     )
   } else {
       return (
-        <div className='w-full flex flex-col justify-center h-fit pb-6 pt-0 md:py-8'>
+        <div className='w-full flex flex-col pb-6 pt-0 md:py-8'>
           <h1 className='w-fit px-2 pb-4 pr-20 text-sm'>Welcome, Guest</h1>
-          <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 px-4">
+          <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-4 gap-0 px-4 overflow-scroll">
 
             <div className='z-10 w-full col-span-2 bg-[#fcfcfc] rounded-md mb-4 md:mb-0 overflow-clip shadow-md shadow-[#e7e7e7]'>
                   <h3 className='bg-[#fed243] w-fit mb-2 px-2 uppercase text-center'>New</h3>
@@ -101,7 +101,7 @@ const [category, setCategory] = useState([]);
                     {/* PRICE: <span className='line-through text-gray-500 opacity-75'>{((props.price*100)/props.discountPercentage)*500}</span> {props.price*500}</p>
                                     <p>{props.description} */}
 
-              <div className='mt-2 px-3'>
+              <div className='mt-2 px-3 text-center lg:text-left'>
                 <h2 className='font-extrabold text-4xl'>{props.title}</h2>
                 <p className='text-[1.2rem] mb-3 mt-2 z-20 font-bold'>PRICE: ₦{(props.price)*500} </p>
                 <p>{props.description}</p>
@@ -110,6 +110,7 @@ const [category, setCategory] = useState([]);
             </div>
 
             <HotSection 
+              category0={category[2]}
               category1={category[0]}
               category2={category[1]}
 

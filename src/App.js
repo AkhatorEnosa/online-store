@@ -57,7 +57,6 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
 
   return (
     <div className="h-screen">
-      {console.log(product)}
       <NavBar/>
       <ErrorBoundary>
         <Hot 
@@ -80,7 +79,12 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
           />
         </ErrorBoundary>
       <MegaSales />
-      <Sections />
+      <Sections 
+          products = {products}
+          title={product.title}
+          image={product.image}
+          price={product.price}
+      />
       <Benefits />
       <Footer />
     </div>

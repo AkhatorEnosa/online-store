@@ -1,108 +1,61 @@
 import React from 'react';
-import Bag from '../assets/bag.jpg';
+// import Bag from '../assets/bag.jpg';
 import {AiFillStar} from 'react-icons/ai';
 import {AiOutlineStar} from 'react-icons/ai';
 
-const Sections = () => {
+const Sections = (props) => {
   return (
-    <div className='grid md:grid-cols-2 grid-cols-2 md:p-6 p-8 pb-3'>
-      <div className="flex flex-col md:m-6 -mb-2 md:p-4 p-2 -pb-5 w-full md:border-l-2 border-yellow-200/20">
-        <h1 className='uppercase border-b-2 border-[#fed243] w-fit pr-5 mb-10 '>Hot Trend</h1>
+    <div className='w-full h-fit grid md:grid-cols-2 grid-cols-1 my-4'>
+      <div className="flex flex-col mx-2 -mb-2 md:p-4 p-2 -pb-5">
+        <h1 className='uppercase border-b-2 border-[#fed243] w-fit pr-5 mb-10 font-bold'>Hot Trend</h1>
 
-        <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
-              <span className='text-sm'>School bag</span>
-              <div className='text-small flex'>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiOutlineStar/>
-                </div>
-              <p className='font-bold text-md'>₦10,500</p>
-            </div>
-        </div>
+        {
 
-        <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
-              <span className='text-sm'>School bag</span>
-              <div className='text-small flex'>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiOutlineStar/>
-                </div>
-              <p className='font-bold text-md'>₦10,500</p>
-            </div>
-        </div>
-
-        <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
-              <span className='text-sm'>School bag</span>
-              <div className='text-small flex'>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiOutlineStar/>
-                </div>
-              <p className='font-bold text-md'>₦10,500</p>
-            </div>
-        </div>
+            props.products.map(x => {
+              return (
+                <div key={x.id} className="flex mb-12 items-start justify-start px-5">
+                    <img src={x.image} alt="item" className='md:w-36 w-40 md:h-36'/>
+                    <div className='flex flex-col justify-between md:m-0 ml-10 md:ml-10 mt-5 self-center'>
+                      <span className='text-sm mb-2'>{x.title}</span>
+                      <div className='text-small flex'>
+                        <AiFillStar className='text-[#fed243]'/>
+                        <AiFillStar className='text-[#fed243]'/>
+                        <AiFillStar className='text-[#fed243]'/>
+                        <AiFillStar className='text-[#fed243]'/>
+                        <AiOutlineStar/>
+                        </div>
+                      <p className='font-bold text-md mt-2'>₦{(x.price) * 500}</p>
+                    </div>
+                </div> 
+                )
+          }).slice(0,3)
+        }
       </div>
-      
 
-      <div className="flex flex-col md:m-6 -mb-2 md:p-4 p-2 -pb-5 w-full md:border-l-2 border-yellow-200/20">
-        <h1 className='uppercase border-b-2 border-[#fed243] w-fit pr-5 mb-10 '>Best Sellers</h1>
+      <div className="flex flex-col mx-2 -mb-2 md:p-4 p-2 -pb-5">
+        <h1 className='uppercase border-b-2 border-[#fed243] w-fit pr-5 mb-10 font-bold'>Best Sellers</h1>
 
-        <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
-              <span className='text-sm'>School bag</span>
-              <div className='text-small flex'>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiOutlineStar/>
-                </div>
-              <p className='font-bold text-md'>₦10,500</p>
-            </div>
-        </div>
+        {
 
-        <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
-              <span className='text-sm'>School bag</span>
-              <div className='text-small flex'>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiOutlineStar/>
-                </div>
-              <p className='font-bold text-md'>₦10,500</p>
-            </div>
-        </div>
-
-        <div className="flex mb-12 items-start justify-start text-center">
-            <img src={Bag} alt="item" className='md:w-36 w-24 md:h-36'/>
-            <div className='flex flex-col justify-between md:m-0 md:ml-10 mt-5 self-center'>
-              <span className='text-sm'>School bag</span>
-              <div className='text-small flex'>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiFillStar className='text-[#fed243]'/>
-                <AiOutlineStar/>
-                </div>
-              <p className='font-bold text-md'>₦10,500</p>
-            </div>
-        </div>
+            props.products.map(x => {
+              return (
+                <div key={x.id} className="flex mb-12 items-start justify-start px-5">
+                    <img src={x.image} alt="item" className='md:w-36 w-40 md:h-36'/>
+                    <div className='flex flex-col justify-between md:m-0 ml-10 md:ml-10 mt-5 self-center'>
+                      <span className='text-sm mb-2'>{x.title}</span>
+                      <div className='text-small flex'>
+                        <AiFillStar className='text-[#fed243]'/>
+                        <AiFillStar className='text-[#fed243]'/>
+                        <AiFillStar className='text-[#fed243]'/>
+                        <AiFillStar className='text-[#fed243]'/>
+                        <AiOutlineStar/>
+                        </div>
+                      <p className='font-bold text-md mt-2'>₦{(x.price) * 500}</p>
+                    </div>
+                </div> 
+                )
+          }).reverse().slice(0,3)
+        }
       </div>
     </div>
   );

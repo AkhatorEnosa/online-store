@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Benefits from './components/Benefits';
+import ErrorBoundary from './components/ErrorBoundary';
 import Footer from './components/Footer';
 import Hot from './components/Hot';
 import MegaSales from './components/MegaSales';
@@ -58,18 +59,26 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
     <div className="h-screen">
       {console.log(product)}
       <NavBar/>
-      <Hot 
-        // price={product.price}
-        description={product.description}
-        title={product.title}
-        // discountPercentage={product.discountPercentage}
-        image={product.image}
-        loading={loading}
+      <ErrorBoundary>
+        <Hot 
+          price={product.price}
+          description={product.description}
+          title={product.title}
+          // discountPercentage={product.discountPercentage}
+          image={product.image}
+          loading={loading}
 
-        product={products}
-        category={product.category}
-      />
-      <NewProducts />
+          product={products}
+          category={product.category}
+        />
+
+        <NewProducts 
+          products = {products}
+          title={product.title}
+          image={product.image}
+          price={product.price}
+          />
+        </ErrorBoundary>
       <MegaSales />
       <Sections />
       <Benefits />

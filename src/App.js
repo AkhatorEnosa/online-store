@@ -79,25 +79,19 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
 
           <NewProducts 
             products = {products}
-            title={product.title}
-            image={product.image}
-            price={product.price}
             />
-          </ErrorBoundary>
-        <MegaSales />
-        <Sections 
-            products = {products}
-            title={product.title}
-            image={product.image}
-            price={product.price}
-        />
-        <Benefits />
-        <Footer />
+          <MegaSales />
+          <Sections 
+              products = {products}
+              />
+          <Benefits />
+          <Footer />
+            </ErrorBoundary>
       </div>
     );
   } else {
     return (
-      <div className="h-screen bg-[#fed243]">
+      <div className="h-screen bg-[#fe4343]">
         <div className="w-full h-full flex flex-col justify-center items-center align-middle">
           <div className="p-10 rounded-full bg-black animate-bounce"></div>
           <p className='self-center'>Loading</p>

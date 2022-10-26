@@ -10,20 +10,17 @@ const Hero = () => {
           Sale <span className="text-[#fe4343] animate-pulse">&#62;</span>
         </h1>
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-wide">
-          Select Your New and Perfect Style
+          Nike Air Max 270
         </h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore odio
-          tenetur illum doloremque officiis labore, pariatur molestiae dolorum
-          alias placeat numquam, facilis repudiandae soluta maiores. Quidem
-          molestiae exercitationem sunt illo!
+          Legendary Air gets lifted First lifestyle Air Max brings you styke, comfort and 270 degrees of Air. Its tinted Air winddow lets you showcase one of our greatest innovations.
         </p>
         <button className="px-10 py-2 lg:py-4 w-fit lg:mt-4 lg:w-full hover:bg-[#fe4343] hover:text-black bg-[#000]/90 text-white shadow-md duration-300">
           Buy
         </button>
       </div>
 
-      <div className="img col-span-full lg:col-span-4 order-first lg:order-last z-30 lg:scale-125">
+      <div className="img col-span-full lg:col-span-4 order-first lg:order-last z-30 lg:scale-115">
         <img src={Shoe} alt="This is a Product" />
       </div>
     </div>

@@ -24,7 +24,7 @@ const NewProducts = (props) => {
                     </div>
 
                     <div className='w-full flex flex-col align-middle justify-center items-center rounded-b-lg px-2 py-4'>
-                      <span className=''>{props.title}</span>
+                      <span className=''>{x.title}</span>
                       <div className='text-small flex'>
                         <AiFillStar className='text-[#fe4343]'/>
                         <AiFillStar className='text-[#fe4343]'/>

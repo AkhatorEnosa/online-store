@@ -17,7 +17,7 @@ const NavBar = () => {
       </div>
 
       {/* fullscreen menu */}
-        <ul className='links hidden lg:flex p-0 uppercase tracking-wider text-xs'>
+        <ul className='links hidden lg:flex p-0 uppercase tracking-wider text-sm'>
           <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Home</li>
           <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Phones & accessories</li>
           <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Clothing</li>
@@ -50,12 +50,12 @@ const NavBar = () => {
           <p>Shaup.com</p>
         </div>
 
-          <ul className='links flex flex-col p-4 uppercase tracking-wider'>
-            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Home</li>
-            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Phones & accessories</li>
-            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Clothing</li>
-            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Electronics</li>
-            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fed243] hover:translate-x-4 duration-200 cursor-pointer '>Contact</li>
+          <ul className='links flex flex-col p-4 uppercase tracking-wider text-xs md:text-sm'>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fe4343] hover:translate-x-4 duration-200 cursor-pointer '>Home</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fe4343] hover:translate-x-4 duration-200 cursor-pointer '>Phones & accessories</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fe4343] hover:translate-x-4 duration-200 cursor-pointer '>Clothing</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fe4343] hover:translate-x-4 duration-200 cursor-pointer '>Electronics</li>
+            <li className='p-6 px-3 hover:border-b-[1px] hover:border-b-[#fe4343] hover:translate-x-4 duration-200 cursor-pointer '>Contact</li>
           </ul>
 
           <ul className='others flex flex-col p-7 tracking-widest text-sm text-[#737373] font-thin'>

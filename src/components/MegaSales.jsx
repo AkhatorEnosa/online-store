@@ -8,7 +8,7 @@ const MegaSales = () => {
       <div className="flex flex-col ml-10 z-50">
         <p className='md:text-base text-xs'>THE BIGGEST SALE OF THE YEAR</p>
         <h1 className='lg:text-7xl text-3xl tracking-tight font-extrabold'>Mega Shopping Fiesta</h1>
-        <button className="px-8 py-2 hover:bg-[#fed243] hover:text-black bg-[#000] text-white my-4 shadow-md duration-300">
+        <button className="px-8 py-2 hover:bg-[#fe4343] hover:text-black bg-[#000] text-white my-4 shadow-md duration-300">
           Shop Now
         </button>
       </div>

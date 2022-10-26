@@ -55,16 +55,16 @@ const Footer = () => {
           </button>
           </div>
           <div className="flex mt-7">
-            <span className='bg-[#fed243] rounded-full p-2 mx-2 cursor-pointer'>
+            <span className='bg-[#fe4343]/30 rounded-full p-2 mx-2 cursor-pointer'>
               <GrFacebookOption className='text-[#3b3521]' size={20}/>
             </span>
-            <span className='bg-[#fed243] rounded-full p-2 mx-2'>
+            <span className='bg-[#fe4343]/30 rounded-full p-2 mx-2'>
               <GrTwitter className='text-[#3b3521]' size={20}/>
             </span>
-            <span className='bg-[#fed243] rounded-full p-2 mx-2'>
+            <span className='bg-[#fe4343]/30 rounded-full p-2 mx-2'>
               <GrInstagram className='text-[#3b3521]' size={20}/>
             </span>
-            <span className='bg-[#fed243] rounded-full p-2 mx-2'>
+            <span className='bg-[#fe4343]/30 rounded-full p-2 mx-2'>
               <GrPinterest className='text-[#3b3521]' size={20}/>
             </span>
         </div>

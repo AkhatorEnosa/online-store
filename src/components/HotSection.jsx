@@ -13,7 +13,7 @@ const HotSection = (props) => {
         <div className="w-full lg:h-[150px] h-[250px] lg:scale-150 flex justify-center py-4 rounded-1xl overflow-hidden">
           <img src={props.products[3].image} alt="product_img" className='p-4 group-hover:scale-125 duration-300'/>
         </div>
-        <button className='py-2 w-fit px-3 mx-auto text-sm hover:font-bold mt-4 rounded-1xl text-center tracking-wider duration-300 ease-in-out shadow-md rounded-md bg-[#fed243] text-black'>Explore</button>
+        <button className='py-2 w-fit px-3 mx-auto text-sm hover:font-bold mt-4 rounded-1xl text-center tracking-wider duration-300 ease-in-out shadow-md rounded-md bg-[#fe4343] text-black'>Explore</button>
       </div>
     </div>
 
@@ -23,7 +23,7 @@ const HotSection = (props) => {
         <div className="w-full lg:h-[150px] h-[250px] lg:scale-150 flex justify-center py-4 rounded-1xl overflow-hidden">
           <img src={props.products[9].image} alt="product_img" className='p-4 group-hover:scale-125 duration-300'/>
         </div>
-        <button className='py-2 w-fit px-3 mx-auto text-sm hover:font-bold mt-4 rounded-1xl text-center tracking-wider duration-300 ease-in-out shadow-md rounded-md bg-[#fed243] text-black'>Explore</button>
+        <button className='py-2 w-fit px-3 mx-auto text-sm hover:font-bold mt-4 rounded-1xl text-center tracking-wider duration-300 ease-in-out shadow-md rounded-md bg-[#fe4343] text-black'>Explore</button>
       </div>
     </div>
 
@@ -33,7 +33,7 @@ const HotSection = (props) => {
         <div className="w-full lg:h-[150px] h-[250px] lg:scale-150 flex justify-center py-4 rounded-1xl overflow-hidden">
           <img src={props.products[6].image} alt="product_img" className='p-4 group-hover:scale-125 duration-300'/>
         </div>
-        <button className='py-2 w-fit px-3 mx-auto text-sm hover:font-bold mt-4 rounded-1xl text-center tracking-wider duration-300 ease-in-out shadow-md rounded-md bg-[#fed243] text-black'>Explore</button>
+        <button className='py-2 w-fit px-3 mx-auto text-sm hover:font-bold mt-4 rounded-1xl text-center tracking-wider duration-300 ease-in-out shadow-md rounded-md bg-[#fe4343] text-black'>Explore</button>
       </div>
     </div>
   </div>

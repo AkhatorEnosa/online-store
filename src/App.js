@@ -3,7 +3,8 @@ import './App.css';
 import Benefits from './components/Benefits';
 import ErrorBoundary from './components/ErrorBoundary';
 import Footer from './components/Footer';
-import Hot from './components/Hot';
+import Hero from './components/Hero';
+// import Hot from './components/Hot';
 import MegaSales from './components/MegaSales';
 import NavBar from './components/NavBar';
 import NewProducts from './components/NewProducts';
@@ -59,10 +60,11 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
 
   if(!loading && !error) {
     return (
-      <div className="h-screen">
+      <div className="h-screen flex flex-col justify-between">
         <NavBar/>
         <ErrorBoundary>
-          <Hot 
+          <Hero />
+          {/* <Hot 
             price={product.price}
             description={product.description}
             title={product.title}
@@ -73,7 +75,7 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
 
             product={products}
             category={product.category}
-          />
+          /> */}
 
           <NewProducts 
             products = {products}

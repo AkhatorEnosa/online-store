@@ -5,7 +5,7 @@ import { AiFillHeart, AiTwotoneShopping} from "react-icons/ai";
 
 const NewProducts = (props) => {
   return (
-    <div className='md:px-28 px-10'>
+    <div className='md:px-28 px-10 z-30 py-20'>
       <div className="w-full flex flex-col">
           <h1 className='text-2xl font-bold uppercase border-b-2 border-[#fed243] w-fit pr-5 mt-4 mb-10 '>New Arrivals</h1>
           <div className='grid md:grid-cols-4 grid-cols-2'>
@@ -14,7 +14,7 @@ const NewProducts = (props) => {
               return (
                 <div key={x.id} className='shadow my-6 rounded-lg flex flex-col justify-between m-2 align-middle items-center overflow-hidden group duration-300 text-center'>
 
-                    <div className="flex -translate-y-24 group-hover:translate-y-0 bg-gradient-to-b from-[#fed243]/30 to-white/30 max-h-auto backdrop-blur-lg p-4 w-full rounded-t-lg justify-between box-border pt-6 mb-0 z-50 duration-300">
+                    <div className="flex -translate-y-24 group-hover:translate-y-0 bg-gradient-to-b from-[#fed243]/30 to-white/30 max-h-auto backdrop-blur-lg p-4 w-full rounded-t-lg justify-between box-border pt-6 mb-0 z-30 duration-300">
                       <span className='bg-white hover:bg-[#fe4362] hover:text-[#fff] shadow-md px-2 py-2 rounded-full text-black duration-500'><AiFillHeart size={25}/></span>
                       <span className='bg-white hover:bg-[#437efe] hover:text-[#fff] shadow-md px-2 py-2 rounded-full text-blackduration-500'><AiTwotoneShopping size={25}/></span>
                     </div>

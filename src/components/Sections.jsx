@@ -5,7 +5,7 @@ import {AiOutlineStar} from 'react-icons/ai';
 
 const Sections = (props) => {
   return (
-    <div className='w-full h-fit grid md:grid-cols-2 grid-cols-1 my-4'>
+    <div className='w-full h-fit grid md:grid-cols-2 grid-cols-1 py-20'>
       <div className="flex flex-col mx-2 -mb-2 md:p-4 p-2 -pb-5">
         <h1 className='uppercase border-b-2 border-[#fed243] w-fit pr-5 mb-10 font-bold'>Hot Trend</h1>
 

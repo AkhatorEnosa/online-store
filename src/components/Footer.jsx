@@ -9,7 +9,7 @@ import {FaCcPaypal} from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='w-full flex md:flex-row flex-col justify-around p-10'>
+    <div className='w-full flex md:flex-row flex-col justify-around p-10 py-20'>
       <div className='flex flex-col max-w-[450px] md:px-5 py-2 mb-5'>
         <div className="logo text-black text-5xl font-extrabold items-center mb-6">
           <p>Shaup.com</p>

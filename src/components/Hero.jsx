@@ -16,7 +16,7 @@ const Hero = () => {
           Legendary Air gets lifted First lifestyle Air Max brings you styke, comfort and 270 degrees of Air. Its tinted Air winddow lets you showcase one of our greatest innovations.
         </p>
         <button className="px-10 py-2 lg:py-4 w-fit lg:mt-4 lg:w-full hover:bg-[#fe4343] hover:text-black bg-[#000]/90 text-white shadow-md duration-300">
-          Buy
+          Add to cart
         </button>
       </div>
 

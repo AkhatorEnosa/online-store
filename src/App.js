@@ -12,9 +12,10 @@ import Sections from './components/Sections';
 
 function App() {
 const [products, setProducts] = useState([]);
-const [product, setProduct] = useState([]);
+// const [product, setProduct] = useState([]);
 const [loading, setLoading] = useState(true);
 const [error, setError] = useState(true);
+const [cart, setCart] = useState([]);
 
 
 useEffect(()=> {
@@ -45,7 +46,7 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
         .then(item => {
              if(mounted) {
                  setProducts(item);
-                 setProduct(item[randomNum]);
+                //  setProduct(item[randomNum]);
             } 
         })
         .catch(error => {

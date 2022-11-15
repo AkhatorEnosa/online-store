@@ -8,8 +8,12 @@ body {
   color: rgb(52, 39, 24);
 }
 
-.logo,.fiesta {
+.logo,.fiesta, .countdown {
   font-family: 'Allison', cursive;
+}
+
+.countdown {
+  font-family: 'Montserrat';
 }
 
 .fiesta {

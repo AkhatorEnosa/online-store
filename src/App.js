@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Benefits from './components/Benefits';
+import Cart from './components/Cart';
 import ErrorBoundary from './components/ErrorBoundary';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -15,7 +16,29 @@ const [products, setProducts] = useState([]);
 // const [product, setProduct] = useState([]);
 const [loading, setLoading] = useState(true);
 const [error, setError] = useState(true);
-const [cart, setCart] = useState([]);
+
+// start cart
+  const [cart, setCart] = useState([]);
+  const [found, setFound] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const addItem = (item) => {
+    if (cart.includes(item)) {
+      setFound(true)
+      alert("Already in cart");
+    } else {
+      setFound(false);
+      setCart([...cart, item]);
+      // cart.push(item);
+    }
+
+    console.log(cart);
+  }
+
+  const handleShow = () => {
+    setShow(true);
+  }
+  //cart
 
 
 useEffect(()=> {
@@ -33,7 +56,7 @@ useEffect(()=> {
   //       console.log(newString);
   //       // console.log(numToString[i]);
   //     }
-const randomNum = Math.floor(Math.random() * 30) + 1;
+// const randomNum = Math.floor(Math.random() * 30) + 1;
  
   let mounted = true;
   fetch('https://fakestoreapi.com/products')
@@ -62,7 +85,7 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
   if(!loading && !error) {
     return (
       <div className="h-screen flex flex-col justify-between">
-        <NavBar/>
+        <NavBar handleShow={handleShow}/>
         <ErrorBoundary>
           <Hero />
           {/* <Hot 
@@ -73,13 +96,14 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
             image={product.image}
             loading={loading}
             error={error}
-
+            
             product={products}
             category={product.category}
           /> */}
 
           <NewProducts 
             products = {products}
+            addItem = {addItem}
             />
           <MegaSales />
           <Sections 
@@ -88,6 +112,10 @@ const randomNum = Math.floor(Math.random() * 30) + 1;
           <Benefits />
           <Footer />
             </ErrorBoundary>
+          <Cart 
+              show={show} 
+              handleShow={handleShow}
+            />
       </div>
     );
   } else {

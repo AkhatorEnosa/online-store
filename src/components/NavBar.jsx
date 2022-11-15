@@ -3,7 +3,7 @@ import { BiSearchAlt } from 'react-icons/bi';
 import { TiShoppingCart } from 'react-icons/ti';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -17,12 +17,12 @@ const NavBar = () => {
       </div>
 
       {/* fullscreen menu */}
-        <ul className='links hidden lg:flex p-0 uppercase tracking-wider text-sm'>
-          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Home</li>
-          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Phones & accessories</li>
-          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Clothing</li>
-          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Electronics</li>
-          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#000]'>Contact</li>
+        <ul className='links hidden lg:flex p-0 tracking-wider text-sm'>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#fe4343]'>Home</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#fe4343]'>Phones & accessories</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#fe4343]'>Clothing</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#fe4343]'>Electronics</li>
+          <li className='mr-8 cursor-pointer duration-300 hover:border-b-[1px] hover:border-b-[#fe4343]'>Contact</li>
         </ul>
 
         <ul className='others flex tracking-widest text-sm text-black justify-end align-bottom items-center'>
@@ -31,7 +31,7 @@ const NavBar = () => {
           <li className='mr-6'>
             <div className="cursor-pointer">
               <span className='absolute w-4 h-4 bg-red-600 rounded-full text-center top-6 text-white font-bold text-xs lg:top-6 lg:right-10'>2</span>
-              <p className="flex justify-center"><TiShoppingCart size={20}/></p>
+              <p className="flex justify-center"><TiShoppingCart size={20} onClick={props.handleShow}/></p>
             </div>
           </li>
         </ul>

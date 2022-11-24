@@ -21,14 +21,16 @@ const [error, setError] = useState(true);
   const [cart, setCart] = useState([]);
   const [found, setFound] = useState(false);
   const [show, setShow] = useState(false);
+  const [itemCount, setItemCount] = useState(0);
 
   const addItem = (item) => {
     if (cart.includes(item)) {
-      setFound(true)
-      alert("Already in cart");
+      setFound(true);
+      alert("Item already in cart.");
     } else {
       setFound(false);
       setCart([...cart, item]);
+      setItemCount(itemCount+1)
       // cart.push(item);
     }
 
@@ -86,7 +88,7 @@ useEffect(()=> {
   if(!loading && !error) {
     return (
       <div className="h-screen flex flex-col justify-between">
-        <NavBar handleShow={handleShow}/>
+        <NavBar handleShow={handleShow} itemCount={itemCount}/>
         <ErrorBoundary>
           <Hero />
           {/* <Hot 

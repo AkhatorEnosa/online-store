@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import NewProductsCard from './NewProductsCard';
 
 const NewProducts = (props) => {

@@ -30,7 +30,7 @@ const NavBar = (props) => {
           <li className='mr-6 hidden lg:flex cursor-pointer hover:text-[#fe4343]'><BiSearchAlt size={20}/></li>
           <li className='mr-6 p-2' onClick={props.handleShow}>
             <div className="cursor-pointer">
-              <span className='absolute w-4 h-4 bg-red-600 rounded-full text-center top-6 text-white font-bold text-xs lg:top-6 lg:right-10'>2</span>
+              <span className='absolute w-4 h-4 bg-red-600 rounded-full text-center top-6 text-white font-bold text-xs lg:top-6 lg:right-10'>{props.itemCount}</span>
               <p className="flex justify-center"><TiShoppingCart size={20}/></p>
             </div>
           </li>

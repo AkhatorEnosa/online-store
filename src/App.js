@@ -36,7 +36,8 @@ const [error, setError] = useState(true);
   }
 
   const handleShow = () => {
-    setShow(true);
+    setShow(!show);
+    console.log()
   }
   //cart
 

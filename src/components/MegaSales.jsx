@@ -40,7 +40,7 @@ const MegaSales = () => {
       <img
         src={ShopBag}
         alt="shopping bag"
-        className="lg:w-[30rem] md:w-[25rem] w-[10rem]"
+        className="lg:w-[30rem] md:w-[25rem] w-[14rem] md:relative absolute md:left-0 right-60"
       />
 
       {distance < 0 ? (
@@ -48,11 +48,11 @@ const MegaSales = () => {
           <p className="md:text-base text-xs text-center">
             THE BIGGEST SALE OF THE YEAR
           </p>
-          <h1 className="lg:text-7xl text-3xl tracking-tight font-extrabold text-center">
+          <h1 className="lg:text-7xl md:text-3xl text-2xl tracking-tight font-extrabold text-center">
             Mega Shopping Fiesta
           </h1>
           {/* <h1 className='mt-6 text-center lg:text-3xl text-2xl tracking-tight font-bold uppercase'>{countdown}</h1> */}
-          <button className="px-32 py-3 mx-auto rounded-lg hover:bg-[#fe4343] hover:text-black bg-[#000] text-white my-4 shadow-md cursor-pointer duration-300">
+          <button className="px-10 md:px-32 py-3 mx-auto rounded-lg hover:bg-[#fe4343] hover:text-black bg-[#000] text-white my-4 shadow-md cursor-pointer duration-300">
             Explore
           </button>
         </div>

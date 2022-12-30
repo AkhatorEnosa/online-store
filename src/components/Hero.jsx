@@ -2,17 +2,8 @@ import React, {useState} from 'react'
 import Shoe from '../assets/shoe.png'
 
 const Hero = ({ item, handleClick }) => {
-  const [headerProduct, setHeaderProduct] = useState({
-    category: "men's clothing",
-    description: "Legendary Air gets lifted First lifestyle Air Max brings you styke, comfort and 270 degrees of Air. Its tinted Air winddow lets you showcase one of our greatest innovations.",
-    id: 444,
-    image: {Shoe},
-    price: 109.95,
-    rating: {rate: 3.9, count: 120},
-    title: "Nike Air Max 270"
-  });
 
-  const {image, title, price} = item;
+  const {image, title, description, price} = item;
 
   return (
     <div className="w-full h-auto md:h-screen bg-grey flex flex-col lg:grid grid-cols-7 py-20 lg:py-0 mt-6 lg:mt-16 px-8 md:px-16 lg:px-32 md:gap-8 lg:gap-10 justify-around md:justify-evenly items-center bg-[#f6f6f6]">
@@ -21,11 +12,14 @@ const Hero = ({ item, handleClick }) => {
           <span className="text-[#fe4343] animate-pulse">&#x3C;</span> Hottest
           Sale <span className="text-[#fe4343] animate-pulse">&#62;</span>
         </h1>
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-wide">
-          {headerProduct.title}
-        </h1>
+        <div className="">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-wide">
+            {title}
+          </h1>
+          <b className="text-2xl font-bold mt-6 text-[#fe4343]">₦{(price) * 500}</b>
+        </div>
         <p>
-          {headerProduct.description}
+          {description}
         </p>
         <button className="px-10 py-2 lg:py-4 w-fit lg:mt-4 lg:w-full hover:bg-[#fe4343] bg-[#000]/90 text-white shadow-md duration-300" onClick={()=> { handleClick(item) }}>
           Add to cart
@@ -33,7 +27,7 @@ const Hero = ({ item, handleClick }) => {
       </div>
 
       <div className="img col-span-full lg:col-span-4 order-first lg:order-last z-30 lg:scale-115">
-        <img src={headerProduct.image} alt="This is a Product" />
+        <img src={image} alt="This is a Product" />
       </div>
     </div>
   )

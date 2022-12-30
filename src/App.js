@@ -19,19 +19,20 @@ const [error, setError] = useState(true);
 
 // start cart
   const [cart, setCart] = useState([]);
-  const [found, setFound] = useState(false);
+  // const [found, setFound] = useState(false);
   const [show, setShow] = useState(false);
   const [itemCount, setItemCount] = useState(0);
 
+  // add item to cart
   const addItem = (item) => {
     if (cart.includes(item)) {
-      setFound(true);
+      // setFound(true);
       alert("Item already in cart.");
     } else {
-      setFound(false);
-      setCart([...cart, item]);
+      // setFound(false);
+      // setCart([...cart, item]);
+      cart.push(item);
       setItemCount(itemCount+1)
-      // cart.push(item);
     }
 
     console.log(cart);

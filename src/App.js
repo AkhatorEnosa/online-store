@@ -11,13 +11,16 @@ import NavBar from './components/NavBar';
 import NewProducts from './components/NewProducts';
 import Sections from './components/Sections';
 
+
+import Shoe from './assets/shoe.jpeg'
+
 function App() {
 
 const [headerProduct, setHeaderProduct] = useState({
   category: "men's clothing",
   description: "Legendary Air gets lifted First lifestyle Air Max brings you styke, comfort and 270 degrees of Air. Its tinted Air winddow lets you showcase one of our greatest innovations.",
   id: 444,
-  image: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/kwbianpnd3r0enjw7xq8/air-max-270-womens-shoes-Pgb94t.png",
+  image: Shoe,
   price: 109.95,
   rating: {rate: 3.9, count: 120},
   title: "Nike Air Max 270"

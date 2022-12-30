@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Shoe from '../assets/shoe.png'
 
 const Hero = ({ item, handleClick }) => {
 

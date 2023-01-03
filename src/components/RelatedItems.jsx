@@ -3,7 +3,7 @@ import {AiFillStar} from 'react-icons/ai';
 import {AiOutlineStar} from 'react-icons/ai';
 // import { AiFillHeart, AiTwotoneShopping} from "react-icons/ai";
 
-const CartRight = ({ item, handleClick }) => {
+const RelatedItems = ({ item, handleClick }) => {
   const {image, title, price} = item;
   return (
     <div className='shadow my-6 rounded-lg flex flex-col justify-center lg:justify-between md:text-xs lg:text-base m-2 align-middle items-center overflow-hidden group duration-300 text-center'>
@@ -33,4 +33,4 @@ const CartRight = ({ item, handleClick }) => {
   );
 };
 
-export default CartRight;
+export default RelatedItems;

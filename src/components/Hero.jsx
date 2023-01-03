@@ -1,5 +1,3 @@
-import React, {useState} from 'react'
-
 const Hero = ({ item, handleClick }) => {
 
   const {image, title, description, price} = item;
@@ -15,7 +13,7 @@ const Hero = ({ item, handleClick }) => {
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-wide">
             {title}
           </h1>
-          <b className="text-2xl font-bold mt-6 text-[#fe4343]">₦{(price) * 500}</b>
+          <p>Priced @ <b className="text-2xl font-bold mt-6 text-[#fe4343]">₦{(price) * 500}</b></p>
         </div>
         <p>
           {description}

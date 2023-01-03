@@ -12,19 +12,19 @@ import NewProducts from './components/NewProducts';
 import Sections from './components/Sections';
 
 
-import Shoe from './assets/shoe.jpeg'
+import Shoe from './assets/shoe.png'
 
 function App() {
 
-const [headerProduct, setHeaderProduct] = useState({
-  category: "men's clothing",
-  description: "Legendary Air gets lifted First lifestyle Air Max brings you styke, comfort and 270 degrees of Air. Its tinted Air winddow lets you showcase one of our greatest innovations.",
-  id: 444,
-  image: Shoe,
-  price: 109.95,
-  rating: {rate: 3.9, count: 120},
-  title: "Nike Air Max 270"
-});
+  const [headerProduct] = useState({
+    category: "men's clothing",
+    description: "Legendary Air gets lifted First lifestyle Air Max brings you styke, comfort and 270 degrees of Air. Its tinted Air winddow lets you showcase one of our greatest innovations.",
+    id: 444,
+    image: Shoe,
+    price: 109.95,
+    rating: {rate: 3.9, count: 120},
+    title: "Nike Air Max 270"
+  });
 
 const [products, setProducts] = useState([]);
 // const [product, setProduct] = useState([]);
@@ -44,8 +44,8 @@ const [error, setError] = useState(true);
       alert("Item already in cart.");
     } else {
       // setFound(false);
-      // setCart([...cart, item]);
-      cart.push(item);
+      setCart([...cart, item]);
+      // cart.push(item);
       setItemCount(itemCount+1)
     }
 
@@ -135,6 +135,10 @@ useEffect(()=> {
           <Cart 
               show={show} 
               handleShow={handleShow}
+              items={cart}
+              products = {products}
+              addItem = {addItem}
+              // item={cart.map(x => Object.keys(x))}
             />
       </div>
     );

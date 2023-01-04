@@ -3,6 +3,7 @@ import Item from './Item';
 import RelatedItems from './RelatedItems';
 import RelatedItems2 from './RelatedItems2';
 import {AiOutlineClose} from 'react-icons/ai';
+import Checkout from './Checkout';
 // import { useState } from 'react';
 
 const Cart = ({products, cart, addItem, removeItem, items, show, handleShow}) => {
@@ -45,12 +46,7 @@ const Cart = ({products, cart, addItem, removeItem, items, show, handleShow}) =>
                 <h1 className='cart-h text-sm text-black/40 border-b-2 border-black/20 mb-4'>
                   Checkout
                 </h1>
-                {
-                  products.map(item => {
-                    return (
-                      <RelatedItems2 key={item.id} item={item} handleClick={addItem} cart={cart}/>
-                    );
-                  }).slice(0,3)}
+                <Checkout />
               </div>
               <div className="h-full overflow-scroll col-span-2">
                 <div className="flex justify-center">

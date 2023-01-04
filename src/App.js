@@ -40,8 +40,7 @@ const [error, setError] = useState(true);
   // add item to cart
   const addItem = (item) => {
     if (cart.includes(item)) {
-      // setFound(true);
-      alert("Item already in cart.");
+      console.log(false)
     } else {
       // setFound(false);
       setCart([...cart, item]);
@@ -124,6 +123,7 @@ useEffect(()=> {
           <NewProducts 
             products = {products}
             addItem = {addItem}
+            cart={cart}
             />
           <MegaSales />
           <Sections 
@@ -138,6 +138,7 @@ useEffect(()=> {
               items={cart}
               products = {products}
               addItem = {addItem}
+              cart={cart}
               // item={cart.map(x => Object.keys(x))}
             />
       </div>

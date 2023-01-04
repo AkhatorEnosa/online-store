@@ -1,10 +1,11 @@
 import React from 'react';
 import Item from './Item';
 import RelatedItems from './RelatedItems';
+import RelatedItems2 from './RelatedItems2';
 import {AiOutlineClose} from 'react-icons/ai';
 // import { useState } from 'react';
 
-const Cart = ({products, addItem, items, show, handleShow}) => {
+const Cart = ({products, cart, addItem, items, show, handleShow}) => {
   if(items.length < 1) {
     return (
         <div className={show === false ?  'hidden' : 'w-full h-screen fixed z-50 backdrop-blur-lg duration-300'}>
@@ -47,13 +48,13 @@ const Cart = ({products, addItem, items, show, handleShow}) => {
                 {
                   products.map(item => {
                     return (
-                      <RelatedItems key={item.id} item={item} handleClick={addItem}/>
+                      <RelatedItems2 key={item.id} item={item} handleClick={addItem} cart={cart}/>
                     );
                   }).slice(0,3)}
               </div>
               <div className="h-full overflow-scroll col-span-2">
                 <div className="flex justify-center">
-                  <h1 className='cart-h w-fit h-full border-b-black/10 text-2xl font-black border-b-2 mt-5 mb-2 uppercase text-center'>Your cart({items.length} Item)</h1>
+                  <h1 className='cart-h w-fit h-full border-b-black/10 text-2xl font-black border-b-2 mb-2 uppercase text-center'>Your cart({items.length} Item)</h1>
                 </div>
                 <div className="w-full flex flex-col justify-center items-center">
                   {items.map((item) => {
@@ -70,7 +71,7 @@ const Cart = ({products, addItem, items, show, handleShow}) => {
                 {
                   products.map(item => {
                     return (
-                      <RelatedItems key={item.id} item={item} handleClick={addItem}/>
+                      <RelatedItems2 key={item.id} item={item} handleClick={addItem} cart={cart}/>
                     );
                   }).slice(0,3)}
               </div>

@@ -3,7 +3,7 @@ import {AiFillStar} from 'react-icons/ai';
 import {AiOutlineStar} from 'react-icons/ai';
 // import { AiFillHeart, AiTwotoneShopping} from "react-icons/ai";
 
-const NewProductsCard = ({ item, handleClick }) => {
+const NewProductsCard = ({ cart, item, handleClick }) => {
   const {image, title, price} = item;
   return (
     <div className='shadow my-6 rounded-lg flex flex-col justify-center lg:justify-between md:text-xs lg:text-base m-2 align-middle items-center overflow-hidden group duration-300 text-center hover:scale-110'>
@@ -30,7 +30,7 @@ const NewProductsCard = ({ item, handleClick }) => {
                       {/* <p className='bg-slate-600/20 rounded-md text-xs'>{category}</p> */}
                       
                       <button className="p-4 py-2 w-fit lg:mt-2 hover:bg-[#fe4343] bg-[#000]/90 text-white rounded-sm shadow-md duration-300" onClick={()=>handleClick(item)}>
-                        Add to cart
+                       {cart.includes(item) ? "In Cart" : "Add"}
                       </button>
                     </div>
 

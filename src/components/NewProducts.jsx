@@ -10,7 +10,7 @@ const NewProducts = (props) => {
             {
             props.products.map(item => {
               return (
-                <NewProductsCard key={item.id} item={item} handleClick={props.addItem}/>
+                <NewProductsCard key={item.id} item={item} handleClick={props.addItem} cart={props.cart}/>
               );
             }).slice(0,4)}
           </div>

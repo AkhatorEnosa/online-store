@@ -1,4 +1,4 @@
-const Hero = ({ item, handleClick }) => {
+const Hero = ({ cart, item, handleClick }) => {
 
   const {image, title, description, price} = item;
 
@@ -18,8 +18,8 @@ const Hero = ({ item, handleClick }) => {
         <p>
           {description}
         </p>
-        <button className="px-10 py-2 lg:py-4 w-fit lg:mt-4 lg:w-full hover:bg-[#fe4343] bg-[#000]/90 text-white shadow-md duration-300" onClick={()=> { handleClick(item) }}>
-          Add to cart
+        <button className={!cart.includes(item) ? "px-10 py-2 lg:py-4 w-fit lg:mt-4 lg:w-full hover:bg-[#fe4343] bg-[#000]/90 text-white shadow-md duration-300" : "px-10 py-2 lg:py-4 w-fit lg:mt-4 lg:w-full bg-[#fe4343] text-white opacity-30 cursor-not-allowed"} onClick={()=> { handleClick(item) }}>
+          {cart.includes(item) ? "Already In Cart" : "Add to Cart"}
         </button>
       </div>
 

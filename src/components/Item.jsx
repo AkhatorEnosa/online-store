@@ -1,7 +1,7 @@
 import React from 'react';
 import {AiFillCloseCircle, AiFillPlusSquare, AiFillMinusSquare} from 'react-icons/ai';
 
-const Item = ({ item }) => {
+const Item = ({ item, handleRemoveItem }) => {
   const { image, title, price } = item;
   return (
     <div className='w-full grid grid-cols-4 shadow-md px-4 py-2 m-2 rounded-lg justify-between items-center'>
@@ -13,7 +13,7 @@ const Item = ({ item }) => {
               <p>{title}</p>
               <p>₦{(price) * 500}</p>
             </div>
-            <AiFillCloseCircle size={20} className="cursor-pointer" />
+            <AiFillCloseCircle size={20} className="cursor-pointer" onClick={()=>handleRemoveItem(item)}/>
           </div>
 
           <div className='w-56 grid grid-cols-3 px-2 mt-4 justify-center items-center'>

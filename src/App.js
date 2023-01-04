@@ -51,6 +51,15 @@ const [error, setError] = useState(true);
     console.log(cart);
   }
 
+  const removeItem = (item) => {
+    const index = cart.indexOf(item);
+    if (index > -1) { // only splice array when item is found
+      cart.splice(index, 1); // 2nd parameter means remove one item only
+      setCart(cart);
+      setItemCount(itemCount-1)
+    }
+  }
+
   const handleShow = () => {
     setShow(!show);
     console.log()
@@ -105,7 +114,7 @@ useEffect(()=> {
         <NavBar handleShow={handleShow} itemCount={itemCount}/>
         <ErrorBoundary>
           <Hero 
-            item={headerProduct} handleClick={addItem}
+            item={headerProduct} handleClick={addItem} cart={cart}
           />
           {/* <Hot 
             price={product.price}
@@ -139,6 +148,7 @@ useEffect(()=> {
               products = {products}
               addItem = {addItem}
               cart={cart}
+              removeItem={removeItem}
               // item={cart.map(x => Object.keys(x))}
             />
       </div>

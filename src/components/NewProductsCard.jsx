@@ -29,8 +29,8 @@ const NewProductsCard = ({ cart, item, handleClick }) => {
                       <p className='font-bold text-xl'>₦{(price) * 500}</p>
                       {/* <p className='bg-slate-600/20 rounded-md text-xs'>{category}</p> */}
                       
-                      <button className="p-4 py-2 w-fit lg:mt-2 hover:bg-[#fe4343] bg-[#000]/90 text-white rounded-sm shadow-md duration-300" onClick={()=>handleClick(item)}>
-                       {cart.includes(item) ? "In Cart" : "Add"}
+                      <button className={!cart.includes(item) ? "p-4 py-2 w-fit lg:mt-2 hover:bg-[#fe4343] bg-[#000]/90 text-white rounded-md shadow-md duration-300" : "p-4 py-2 w-fit lg:mt-2 bg-[#fe4343] text-white opacity-30 rounded-md cursor-not-allowed"} onClick={()=>handleClick(item)}>
+                       {cart.includes(item) ? "Already In Cart" : "Add to Cart"}
                       </button>
                     </div>
 

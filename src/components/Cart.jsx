@@ -5,7 +5,7 @@ import RelatedItems2 from './RelatedItems2';
 import {AiOutlineClose} from 'react-icons/ai';
 // import { useState } from 'react';
 
-const Cart = ({products, cart, addItem, items, show, handleShow}) => {
+const Cart = ({products, cart, addItem, removeItem, items, show, handleShow}) => {
   if(items.length < 1) {
     return (
         <div className={show === false ?  'hidden' : 'w-full h-screen fixed z-50 backdrop-blur-lg duration-300'}>
@@ -59,7 +59,7 @@ const Cart = ({products, cart, addItem, items, show, handleShow}) => {
                 <div className="w-full flex flex-col justify-center items-center">
                   {items.map((item) => {
                     return(
-                      <Item key={item.id} item={item}/>
+                      <Item key={item.id} item={item} handleRemoveItem={removeItem}/>
                     )
                   })}
                 </div>

@@ -11,7 +11,7 @@ const Item = ({ item, handleRemoveItem }) => {
           <div className="w-full flex justify-between">
             <div>
               <p>{title}</p>
-              <p>₦{(price) * 500}</p>
+              <p className='font-bold'>₦{(price) * 500}</p>
             </div>
             <AiFillCloseCircle size={20} className="cursor-pointer" onClick={()=>handleRemoveItem(item)}/>
           </div>

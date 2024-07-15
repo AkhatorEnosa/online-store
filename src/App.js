@@ -30,6 +30,8 @@ const [products, setProducts] = useState([]);
 // const [product, setProduct] = useState([]);
 const [loading, setLoading] = useState(true);
 const [error, setError] = useState(true);
+const [subtotal, setSubtotal] = useState(0);
+const [num, setNum] = useState(1)
 
 // start cart
   const [cart, setCart] = useState([]);
@@ -37,18 +39,40 @@ const [error, setError] = useState(true);
   const [show, setShow] = useState(false);
   const [itemCount, setItemCount] = useState(0);
 
+  const addSubtotal = (item) => {
+    setSubtotal(subtotal+(item.price*500))
+    return subtotal;
+  }
+
+  const subtractSubtotal = (item) => {
+    if(subtotal > 0) {
+      setSubtotal(subtotal-(item.price*500))
+    }
+    return subtotal;
+  }
+
+  const handleNumAdd = () => {
+    setNum(num+1)
+  }
+
+  const handleNumMinus = () => {
+    if(num > 0){
+      setNum(num-1)
+    } else {
+      setNum(0)
+    }
+  }
+
   // add item to cart
   const addItem = (item) => {
     if (cart.includes(item)) {
-      console.log(false)
-    } else {
       // setFound(false);
-      setCart([...cart, item]);
+    } else {
       // cart.push(item);
+      setCart([...cart, item]);
       setItemCount(itemCount+1)
+      addSubtotal(item)
     }
-
-    console.log(cart);
   }
 
   const removeItem = (item) => {
@@ -57,12 +81,12 @@ const [error, setError] = useState(true);
       cart.splice(index, 1); // 2nd parameter means remove one item only
       setCart(cart);
       setItemCount(itemCount-1)
+      subtractSubtotal(item)
     }
   }
 
   const handleShow = () => {
     setShow(!show);
-    console.log()
   }
   //cart
 
@@ -149,6 +173,10 @@ useEffect(()=> {
               addItem = {addItem}
               cart={cart}
               removeItem={removeItem}
+              sum={handleNumAdd}
+              minus={handleNumMinus}
+              itemNum={num}
+              subtotal={subtotal}
               // item={cart.map(x => Object.keys(x))}
             />
       </div>
